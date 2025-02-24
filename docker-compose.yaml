@@ -1,0 +1,3 @@
+plugin_daemon:
+  environment:
+    PLUGIN_VERIFICATION_ENABLED: "false"  # 禁用插件验证 

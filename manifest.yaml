@@ -1,0 +1,41 @@
+version: 0.0.1
+type: plugin
+author: zhouyang
+name: rapidocr-tool
+label:
+  en_US: RapidOCR Tool
+  zh_Hans: RapidOCR文字识别工具
+description:
+  en_US: OCR tool based on RapidOCR
+  zh_Hans: 基于 RapidOCR 的文字识别工具
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: false
+    endpoint:
+      enabled: false
+    app:
+      enabled: false
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/rapidocr.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-02-21T16:56:30.0194913+08:00
+privacy: PRIVACY.md
+verified: false
+repository: https://github.com/z2721110/rapidocr-tool
